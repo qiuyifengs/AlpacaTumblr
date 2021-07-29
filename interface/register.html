@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Alpaca</title>
+    <link href="../appearance/log.css" rel="stylesheet">
+    <link href="../appearance/login.css" rel="stylesheet">
+    <link href="../appearance/register.css" rel="stylesheet">
+    <link rel="icon" href="D:\vscodecode\Clan\.vscode\Unique\Tumblr\images\alpaca-logo2.webp" type="image/x-icon" />
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="mask">
+        <div class="log-register">
+            <a href="login.html" class="log-register-style log-in first-log">登录</a>
+            <!-- <a href="register.html" class="log-register-style register">注册</a> -->
+        </div>
+        <div class="center-part logo">
+            Alpaca
+        </div>
+        <div class="center-part short-introduction">创作、查看、讨论、找到与你志同道合的人。</div>
+
+        <div class="log-information">
+
+            <form action="">
+                <input type="text" placeholder="电子邮件" class="log-in-input email-information" id="email">
+                <input type="password" placeholder="密码" class="log-in-input password-information" id="password">
+                <input type="text" placeholder="博客名称" class="log-in-input nickname-information" id="nickname">
+
+            </form>
+            <button type="submit" class="center-part register" id="register-submit">注册</button>
+        </div>
+    </div>
+    <script>
+        $("#register-submit").click(function () {
+            var email = $('#email').val();
+            var password = $('#password').val();
+            var nickname = $('#nickname').val();
+            // $ajax({
+            //     type: "post",
+            //     url: "http://10.11.175.144:8080/api/signup?email=email&password=password&nickname=nickname",
+            //     dataType: "json",
+            //     data: { user: { email: email, password: password, nickname: nickname } },
+            //     success: function (data) {
+            //         if (data) {
+            //             if (data.message == "false") {
+            //                 alert("该邮箱已被注册！跳转登陆页面");
+            //                 window.location.href = "D:\vscodecode\Clan\.vscode\Unique\Tumblr\interface\login.html";
+            //             }
+            //             else {
+            //                 alert("登陆成功！");
+            window.location.href = "homepage.html?nickname=" + nickname;
+            //             }
+            //         }
+            //     }
+            // })
+        })
+    </script>
+</body>
+
+</html>

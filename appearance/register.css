@@ -1,0 +1,12 @@
+button {
+  cursor: pointer;
+}
+.log-information .register {
+  text-align: center;
+  line-height: 2.8rem;
+}
+.mask .log-register .log-in {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}

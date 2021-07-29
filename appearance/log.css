@@ -1,0 +1,100 @@
+html {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/log-backgroung.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+input {
+  outline: none;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* 登陆、注册按钮 */
+.log-register {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 8.375rem;
+  height: 2.3125rem;
+  background-color: transparent;
+}
+li {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.log-register-style {
+  float: left;
+  font-family: var(--font-family);
+  width: 2rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 0.375rem 0.9375rem;
+  border: transparent;
+  border-radius: 0.1875rem;
+  color: #333;
+}
+.mask .log-in {
+  background-color: #00cf35;
+}
+.mask .first-log {
+  margin-right: 0.6rem;
+}
+.mask .register {
+  background-color: #00b8ff;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center-part {
+  width: 17.25rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  border: transparent;
+  border-radius: 0.1875rem;
+  height: 2.8rem;
+}
+/* logo区域 */
+.logo {
+  height: 7.5rem;
+  margin-top: 5.25rem;
+  font-size: 5rem;
+}
+
+/* 简短介绍部分 */
+.short-introduction {
+  height: auto;
+  font-size: 20px;
+}
+.mask .box1 .register,
+.mask .box1 .log-in {
+  line-height: 2.8rem;
+  margin-top: 1.25rem;
+}

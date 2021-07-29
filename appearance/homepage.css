@@ -1,0 +1,244 @@
+body {
+  position: relative;
+  background-color: #001935;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 2.8125rem;
+  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #21374f;
+}
+.homepage-logo {
+  width: auto;
+  height: 2.8125rem;
+  font-weight: 700;
+  line-height: 2.8125rem;
+  font-size: 2.25rem;
+  color: #fff;
+}
+.homepage-logo a {
+  width: auto;
+  height: 2.8125rem;
+  color: #fff;
+}
+.header input {
+  width: 25rem;
+  height: 2.3rem;
+  margin-left: 0.625rem;
+  border: 0;
+  border-radius: 0.1875rem;
+  text-indent: 1rem;
+}
+.nav {
+  margin-left: 20rem;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav ul li {
+  padding: 0 1.25rem;
+}
+.nav ul li .usernickname {
+  color: #fff;
+}
+.back-to-home {
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+}
+.back-to-home a svg {
+  fill: #a5aeb8;
+}
+
+.myaccount {
+  line-height: 2.375rem;
+  height: 2.3rem;
+  margin-right: 1.25rem;
+}
+
+.myaccount svg {
+  fill: #a5aeb8;
+}
+.writepen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.375rem;
+  margin-bottom: 0.5rem;
+  background-color: #00b8ff;
+  border: 0;
+  border-radius: 0.1875rem;
+}
+.writepen a {
+  height: 2rem;
+  text-align: center;
+  line-height: 2.375rem;
+}
+.writepen svg {
+  display: inline-block;
+}
+
+.nav .myaccount {
+  position: relative;
+}
+/* 点击 我的账户 图形出现的列表 */
+.nav .myaccount .myaccount-lists {
+  display: none;
+  position: absolute;
+  top: 37px;
+  left: -5.5rem;
+}
+.myaccount-lists .account-title {
+  width: 13.9375rem;
+  height: 2.25rem;
+  text-align: center;
+  line-height: 2.25rem;
+  border: transparent;
+  border-top-left-radius: 0.1875rem;
+  border-top-right-radius: 0.1875rem;
+  color: #535353;
+  background-color: #ededed;
+}
+.myaccount-lists ul {
+  display: flex;
+  flex-direction: column;
+  width: 8.9325rem;
+  height: auto;
+  background-color: #ffffff;
+}
+.myaccount-lists ul li {
+  width: 13.9375rem;
+  height: 2.5625rem;
+  line-height: 2.5625rem;
+}
+.myaccount-lists ul li a {
+  display: inline-block;
+  width: 13.9375rem;
+  height: 2.5625rem;
+  line-height: 2.5625rem;
+  color: #000000;
+  background-color: #ffffff;
+  text-indent: 1rem;
+}
+.myaccount-lists ul li:hover a {
+  background-color: #e5e7ea;
+}
+
+.myaccount-lists ul li a svg {
+  width: 1.25rem;
+  height: 1.3125rem;
+  vertical-align: middle;
+  fill: #505152;
+}
+.back-to-home:hover a svg,
+.myaccount:hover > a svg {
+  fill: #ffffff;
+}
+
+.display-new4 {
+  position: relative;
+}
+/* 点击铅笔图形出现的new菜单 */
+.write-new {
+  display: none;
+  position: absolute;
+  top: 260px;
+  right: 16.8rem;
+  background-color: #001935;
+  border-radius: 20px;
+}
+.write-new ul {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.write-new ul li {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-right: 1.875rem;
+  border: 0;
+  border-radius: 50%;
+}
+.write-new ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: powderblue;
+}
+.write-new ul li a svg {
+  width: 2.5rem;
+  height: 2.1875rem;
+}
+.write-new ul .new-text a {
+  background-color: #fff;
+}
+.write-new ul .new-photo a {
+  background-color: #ff492f;
+}
+.write-new ul .new-voice a {
+  background-color: #7c5cff;
+}
+.write-new ul .new-video a {
+  background-color: #ff62ce;
+}
+
+/* 给write-new里面的ul列表添加动画 */
+@keyframes listsdrop {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.write-new ul .display-new1 {
+  animation: listsdrop 0.4s ease-out backwards;
+}
+.write-new ul .display-new2 {
+  animation: listsdrop 0.4s ease-out 0.1s backwards;
+}
+.write-new ul .display-new3 {
+  animation: listsdrop 0.4s ease-out 0.15s backwards;
+}
+.write-new ul .display-new4 {
+  animation: listsdrop 0.4s ease-out 0.2s backwards;
+}
+.write-new ul .new-thing:hover {
+  transform: translateY(-30px);
+  transition: 0.2s linear;
+}
+
+/* thing-content部分 */
+.thing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 39rem;
+  min-height: 2.46875rem;
+  margin: 0 auto;
+  background-color: pink;
+}
+.thing-content p {
+  font-size: 1.875rem;
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+}
